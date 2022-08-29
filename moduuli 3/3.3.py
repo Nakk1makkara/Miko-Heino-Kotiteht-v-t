@@ -22,3 +22,5 @@ elif gender == "mies" :
         print("Hemoglobiiniarvo on viite-arvossa")
     else:
         print("Hemoglobiiniarvosi on korkea.")
+else:
+    print("syöte virheellinen.")
