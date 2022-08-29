@@ -7,6 +7,8 @@ vuosi = int(input("Syötä vuosiluku : "))
 
 
 if vuosi % 4 == 0 and(vuosi % 400 == 0):
+     print("Vuosi on karkausvuosi.")
+elif vuosi % 4 == 0 :
     print("Vuosi on karkausvuosi.")
 else:
     print("vuosi ei ole karkausvuosi.")
