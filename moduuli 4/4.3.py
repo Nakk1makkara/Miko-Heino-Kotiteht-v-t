@@ -2,14 +2,12 @@
 # kunnes tämä syöttää tyhjän merkkijonon lopetusmerkiksi.
 # Lopuksi ohjelma tulostaa saaduista luvuista pienimmän ja suurimman.
 
+luku = int(input("anna luku : "))
+
 suurin = 0
 pienin = 0
 
-luku = float(input("Anna luku :  "))
+while luku != 2 :
 
-while luku != "g":
-    suurin =
-    pienin =
-    luku = float(input("Anna luku :  "))
-print(f"Suurin luku on : {suurin}")
-print(f"Pienin luku on : {pienin}")
+print(f"pienin luku on {pienin}")
+print(f"suurin luku on {suurin}")
