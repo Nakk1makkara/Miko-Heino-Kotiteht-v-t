@@ -7,7 +7,7 @@ luku = float(input("anna luku : "))
 suurin = -1000000000000000000000000000000000000000000000000000000000000000
 pienin = 10000000000000000000000000000000000000000000000000000000000000000
 
-while luku != 900 :
+while luku != 1000 :
     if luku < suurin or luku < pienin:
         pienin = 0 + luku
 

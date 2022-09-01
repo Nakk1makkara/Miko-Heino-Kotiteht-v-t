@@ -4,14 +4,14 @@
 # Edellisessä tapauksessa tulostetaan Tervetuloa ja jälkimmäisessä Pääsy evätty.
 # (Oikea käyttäjätunnus on python ja salasana rules)
 
-käyttäjä = "python"
+kayttaja = "python"
 sala = "rules"
 yritykset = 0
 
 arvaus1 = str(input("Anna käyttäjätunnus : "))
 arvaus2 = str(input("Anna salasana : "))
 yritykset = yritykset + 1
-while arvaus1 != käyttäjä and arvaus2 != sala :
+while arvaus1 != kayttaja and arvaus2 != sala :
 
     arvaus1 = str(input("Anna käyttäjätunnus : "))
     arvaus2 = str(input("Anna salasana : "))
