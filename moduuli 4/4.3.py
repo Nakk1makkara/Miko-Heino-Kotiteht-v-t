@@ -16,6 +16,5 @@ while luku != 1000 :
 
     luku = float(input("anna luku : "))
 
-
 print(f"pienin luku on {pienin}")
 print(f"suurin luku on {suurin}")
