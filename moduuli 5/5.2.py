@@ -4,3 +4,15 @@
 # Vihje: listan alkioiden lajittelujärjestyksen voi kääntää antamalla sort-metodille
 # argumentiksi reverse=True.
 
+lista = []
+
+numero = input('Anna numeroita ja paina lopuksi "enter" : ' )
+lista.append(numero)
+while numero != "" :
+    if numero == "":
+        break
+    numero = input(' : ')
+    lista.append(numero)
+
+lista.sort()
+print(lista)
