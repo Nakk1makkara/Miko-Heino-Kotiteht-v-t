@@ -7,13 +7,14 @@ luku = (input("anna luku : "))
 suurin = pienin = int(luku)
 
 while luku != "" :
-    int(luku)
+    luku = input("anna luku : ")
+    if luku == "":
+        break
     lukuint = int(luku)
     if lukuint < pienin :
         pienin = lukuint
-    if int(luku) > suurin :
-    lukuint = int(luku)
-    suurin = lukuint
-    luku = (input("anna luku : "))
+    if lukuint > suurin :
+        suurin = lukuint
+
 print(f"pienin luku on {pienin}")
 print(f"suurin luku on {suurin}")
