@@ -2,12 +2,20 @@
 # kunnes tämä syöttää tyhjän merkkijonon lopetusmerkiksi.
 # Lopuksi ohjelma tulostaa saaduista luvuista pienimmän ja suurimman.
 
-luku = int(input("anna luku : "))
+luku = float(input("anna luku : "))
 
-suurin = 0
-pienin = 0
+suurin = -1000000000000000000000000000000000000000000000000000000000000000
+pienin = 10000000000000000000000000000000000000000000000000000000000000000
 
-while luku != 2 :
+while luku != 900 :
+    if luku < suurin or luku < pienin:
+        pienin = 0 + luku
+
+    elif luku > suurin :
+        suurin = 0 + luku
+
+    luku = float(input("anna luku : "))
+
 
 print(f"pienin luku on {pienin}")
 print(f"suurin luku on {suurin}")
