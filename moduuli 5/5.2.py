@@ -15,4 +15,8 @@ while numero != "" :
     lista.append(numero)
 
 lista.sort()
-print(lista)
+print(lista[-1])
+print(lista[-2])
+print(lista[-3])
+print(lista[-4])
+print(lista[-5])
