@@ -17,20 +17,20 @@
 # toteuttaako piste epäyhtälön x^2+y^2<1.)
 
 # en älynnyt tehtävää löysin netistä jotain mutta en saanut toimimaan.. import math ja print( math.pi ) toimisi :D
+# sain vinkkejä luokkalaisilta ja sain toimimaan
+
 import random
-def monte_carlo_estimation():
-    points_in_circle = 1
-    total_points = 0
-    pii = 0
-    num_iterations = 1000000000
 
-    for z in range(0, num_iterations):
-        x = random.uniform(0, 2)
-        y = random.uniform(0, 2)
-        in_circle = math.pow((x-1), 2) + math.pow((y-1), 2) <= 1
-        if in_circle:
-            points_in_circle += 1
-        total_points += 1
-        pi =4 * (points_in_circle / total_points)
+N = int(input("Anna pisteiden määrä: "))
+n = 0
+i = 0
 
-    print("Likiarvo : " + str(pii))
+while i <= N:
+    x = random.uniform(-1, 1)
+    y = random.uniform(-1, 1)
+    if x ** 2 + y ** 2 <= 1:
+        n = n + 1
+    i = i + 1
+
+area = 4 * n / N
+print("Pi:n arvo: ", area)
