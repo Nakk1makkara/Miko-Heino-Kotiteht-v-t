@@ -16,4 +16,4 @@ while galloonat >= 0 :
     print(f"Sinulla on {litrat} litraa")
     galloonat = float(input("anna galloonat : "))
 else :
-    print("sus")
+    print("ohjelma loppu")
