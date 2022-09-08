@@ -4,11 +4,12 @@
 # Kirjoita testausta varten pääohjelma, jossa luot listan,
 # kutsut funktiota ja tulostat sen jälkeen sekä alkuperäisen että karsitun listan.
 
-def pariton(soos):
-    for num in range
-        if
-
-
-lista [1,2,3,4,5,6,7,8,9,10]
-
-pariton(lista)
+def poista(lista2):
+    for n in lista:
+        if n % 2 == 0:
+            lista2.append(n)
+    return lista2
+lista = [1,2,3,4,5,6,7,8,9,10]
+lista2 = []
+print(lista)
+print(poista(lista2))

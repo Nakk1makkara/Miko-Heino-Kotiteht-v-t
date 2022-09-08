@@ -13,7 +13,7 @@ galloonat = float(input("anna galloonat : "))
 litrat = galloonamuunnos(galloonat)
 while galloonat >= 0 :
     litrat = galloonamuunnos(galloonat)
-    print(f"Sinulla on {litrat} litraa")
+    print(f"Sinulla on {litrat:.2f} litraa")
     galloonat = float(input("anna galloonat : "))
 else :
     print("ohjelma loppu")
