@@ -4,14 +4,10 @@
 # käytä for-toistorakennetta nimien kysymiseen ja for/in toistorakennetta niiden läpikäymiseen.
 
 lista = []
-t = 0
-kaupunki = input("Anna ensimmäinen kaupunki tai lopeta painamalla Enter: ")
-t = t +1
 
-while kaupunki!="" and t != 5:
+for n in range(5):
+    kaupunki = input("Anna kaupungin nimi :  ")
     lista.append(kaupunki)
-    kaupunki = input("Anna seuraava kaupunki tai lopeta painamalla Enter: ")
-    t = t +1
 
 for n in lista :
-    print ({n})
+    print (n)

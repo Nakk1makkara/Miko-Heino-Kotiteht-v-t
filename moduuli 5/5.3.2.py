@@ -1,14 +1,14 @@
 
 x = int(input("syötä luku : "))
-isPrimeNumber = False
+IsNotPrimeNumber = False
 
 for i in range (2, x) :
-    t= x % i
-    if t==0 :
-        isPrimeNumber = True
+    jakojäänne= x % i
+    if jakojäänne==0 :
+        IsNotPrimeNumber = True
         break
 
-if isPrimeNumber:
+if IsNotPrimeNumber:
     print("luku ei ole alkuluku")
 
 else:
