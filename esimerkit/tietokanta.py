@@ -9,3 +9,16 @@ yhteys = mysql.connector.connect(
          autocommit=True
          )
 
+#määritellään kysely
+
+sql = "SELECT name, continent FROM country"
+
+
+#suoritetaan kysely
+kursori = yhteys.cursor()
+kursori.execute(sql)
+
+#haetaan ja käsitellään tulos
+tulos = kursori.fetchall()
+for rivi in tulos:
+    print(f"{rivi[0]}, {rivi[1]}")
