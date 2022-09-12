@@ -5,9 +5,10 @@
 # Käytä joukkotietorakennetta nimien tallentamiseen.
 
 nimet = set()
-nimi = (input("Anna nimi : "))
-nimet.add(nimi)
+nimi = 0
 while nimi != "" :
+    nimi = input("Anna nimi : ")
+    nimet.add(nimi)
     if nimi in nimet :
         print(f"{nimi} on jo lisätty listaan! ")
     else :
