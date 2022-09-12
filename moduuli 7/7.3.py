@@ -8,32 +8,35 @@
 # kunnes hän haluaa lopettaa. (ICAO-koodi on lentoaseman yksilöivä tunniste.
 # Esimerkiksi Helsinki-Vantaan lentoaseman ICAO-koodi on EFHK. Löydät koodeja helposti selaimen avulla.)
 
-def valitse():
-    print("1 - syötä uusi")
-    print("2 - haku")
-    print("0 - lopetus")
-    valinta= -1
-    while valinta < 0 or > 2:
-        return valinta
-def lisääUusi(asemat):
-    icao = input("Aseman ICAO-koodi : ")
-    nimi = input("Aseman nimi       : ")
-    asemat[icao] = nimi
-def hae(asemat)
-    icao = input("Aseman ICAO-koodi : ")
-    if icao in asemat:
-        print(asemat[icao])
+def choose():
+    print("1 Anna uusi")
+    print("2 hae")
+    print("0 lopeta")
+    choice = -1
+    while choice < 0 or choice > 2:
+        choice = int(input("Valitse: "))
+    return choice
+
+
+def add_new(airports):
+    icao = input("Aseman ICAO koodi: ")
+    name = input("Aseman nimi: ")
+    airports[icao] = name
+
+
+def search(airports):
+    icao = input("Aseman ICAO koodi: ")
+    if icao in airports:
+        print(airports[icao])
     else:
-        print("Tuntematon ICAO-koodi")
+        print("Tuntemanton koodi")
 
 
-lentoasemat = {"Helsinki-Vantaa":"EFHK",
-               "Edmonton International Airport":"CYEG",
-               "Uumajan lentoasema":"ESNU"}
-valinta = valitse()
-while valinta != 0:
-    if valinta == 1:
-        lisääUusi(lentoasemat)
-    elif valinta == 2:
-        hae(lentoasemat)
-    valinta = valitse()
+airport_list = {}
+choice = choose()
+while choice != 0:
+    if choice == 1:
+        add_new(airport_list)
+    elif choice == 2:
+        search(airport_list)
+    choice = choose()
