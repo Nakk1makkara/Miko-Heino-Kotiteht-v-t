@@ -8,10 +8,12 @@ nimet = set()
 nimi = (input("Anna nimi : "))
 nimet.add(nimi)
 while nimi != "" :
-    nimi = input("Anna nimi : ")
-    nimet.add(nimi)
     if nimi in nimet :
         print(f"{nimi} on jo lisätty listaan! ")
+    else :
+        nimi = input("Anna nimi : ")
+    nimet.add(nimi)
+
 
 for i in nimet:
     print(i)
