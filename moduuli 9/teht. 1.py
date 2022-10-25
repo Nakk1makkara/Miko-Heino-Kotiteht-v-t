@@ -5,3 +5,17 @@
 # Kirjoita pääohjelma, jossa luot uuden auton (rekisteritunnus ABC-123, huippunopeus 142 km/h).
 # Tulosta pääohjelmassa sen jälkeen luodun auton kaikki ominaisuudet.
 
+class Car:
+    def __init__(self, LicensePlate, MaxSpeed, CurrentSpeed, Distance):
+        self.LicensePlate = LicensePlate
+        self.MaxSpeed = MaxSpeed
+        self.CurrentSpeed = CurrentSpeed
+        self.Distance = Distance
+
+
+
+
+
+car1 = Car("NIX-991", 240, 0, 0)
+
+print(f"Auto 1. \nrekisteritunnus:", car1.LicensePlate, "\nHuippunopeus :", car1.MaxSpeed, "KM/H")
