@@ -12,10 +12,10 @@ class Car:
         self.CurrentSpeed = CurrentSpeed
         self.Distance = Distance
     def accelerate(self, speed):
-        if 0 < self.CurrentSpeed + speed:
-            if self.CurrentSpeed > self.MaxSpeed :
-                self.CurrentSpeed = self.MaxSpeed
-            self.CurrentSpeed = self.CurrentSpeed + speed
+
+        self.CurrentSpeed = self.CurrentSpeed + speed
+        if self.CurrentSpeed > self.MaxSpeed :
+            self.CurrentSpeed = self.MaxSpeed
         elif self.CurrentSpeed + speed <= 0 :
             self.CurrentSpeed = 0
         elif self.CurrentSpeed >= self.MaxSpeed:
@@ -29,13 +29,15 @@ class Car:
 
 
 car1 = Car("NIX-991", 240, 0, 0)
-
 car1.PrintInfo()
 
-
 car1.accelerate(30)
+
 car1.accelerate(70)
-car1.accelerate(200)
+
+car1.accelerate(50)
+
+car1.accelerate(-200)
 
 
 car1.PrintInfo()
