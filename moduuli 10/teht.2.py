@@ -9,7 +9,14 @@ class House:
         self.FirstFLoor = FirstFloor
         self.HighestFLoor = HighestFloor
         self.Elevators = Elevators
+        self.ElevatorsList = []
 
+    def CreateElevators(self):
+        for i in range(self.Elevators):
+            Elevator = Elevator(self.FirstFloor, self.HighestFloor, self.CurrentFloor)
+            self.ElevatorsList.append(Elevator)
+
+    def DriveElevator
 
 
 class Elevator:
@@ -39,3 +46,6 @@ class Elevator:
             print(f"Kerros", self.CurrentFloor)
 
 Elevator1 = Elevator(0, 8, 0)
+
+House1 = House(1,12, 3)
+
