@@ -13,7 +13,7 @@ class House:
             Elevator = Elevator(self.FirstFloor, self.HighestFloor, self.CurrentFloor)
             self.ElevatorsList.append(Elevator)
 
-    def DriveElevator
+    def Firealarm:
 
 
 class Elevator:

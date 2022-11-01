@@ -6,17 +6,22 @@
 
 class House:
     def __init__(self, FirstFloor, HighestFloor, Elevators):
-        self.FirstFLoor = FirstFloor
-        self.HighestFLoor = HighestFloor
+        self.FirstFloor = FirstFloor
+        self.HighestFloor = HighestFloor
         self.Elevators = Elevators
         self.ElevatorsList = []
 
     def CreateElevators(self):
         for i in range(self.Elevators):
-            Elevator = Elevator(self.FirstFloor, self.HighestFloor, self.CurrentFloor)
+            Elevator = Elevator(self.FirstFloor, self.HighestFloor, 0)
             self.ElevatorsList.append(Elevator)
 
-    def DriveElevator
+    def DriveElevator(self, ElevatorNumber, DestinationFloor):
+        ElevatorToDrive = self.ElevatorsList[ElevatorNumber]
+        while DestinationFloor > Elevator.CurrentFloor:
+            Elevator.CurrenFloor + 1
+            print(f"Kerros", Elevator.CurrentFloor)
+            if DestinationFloor > self.HighestFloor
 
 
 class Elevator:
