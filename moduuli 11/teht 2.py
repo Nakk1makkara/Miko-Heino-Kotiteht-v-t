@@ -42,7 +42,7 @@ class Polttomoottori(Car):
         super().__init__(LicensePlate, MaxSpeed, CurrentSpeed, Distance)
 
 
-Sahkoauto1 = Sahkoauto("ABC-15", 180, 100,0, 52.5)
+Sahkoauto1 = Sahkoauto("ABC-15", 180, 30,0, 52.5)
 
 polttoauto1 = Polttomoottori("ACD-123", 165, 60, 0, 32.3)
 
