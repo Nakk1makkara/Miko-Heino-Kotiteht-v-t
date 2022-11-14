@@ -12,14 +12,27 @@
 // 2 dice, sum 7, probability is about 15-17%
 // 3 dice, sum 15, probability is about 5%
 
-let nof_c = parseInt(prompt("Number of candidates?"))
+const num_of_dices = Number(prompt('Enter the number of dices: '));
+const sum_of_eyes = Number(prompt('Enter the sum of the eye numbers: '));
 
-let candidates = [];
+let sums_of_dices = [];
 
-for (let i = 0; i < nof_c; i++)
-{
-    let cand_name = prompt("Name for candidate" + (i + 1));
-    let = candidate = {
-        name
+for (let i = 0; i < 10000; i++) {
+    let sum = 0;
+    for (let j = 0; j < num_of_dices; j++) {
+        sum += Math.floor(Math.random() * 6) + 1;
     }
+    sums_of_dices.push(sum);
 }
+
+let count = 0;
+
+sums_of_dices.forEach((sum) => {
+    if (sum === sum_of_eyes) {
+        count++;
+    }
+});
+
+const probability = count / sums_of_dices.length * 100;
+
+document.getElementById('target').innerHTML = `Probability to get sum of ${sum_of_eyes} with ${num_of_dices} dice is ${probability}%`;
