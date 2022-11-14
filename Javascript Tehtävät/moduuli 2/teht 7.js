@@ -8,7 +8,9 @@ function Roll(sivut) {
 }
 
 let LastRoll = 0;
+
 const ul = document.getElementById("list");
+
 const sides = Number(prompt("How many sides does the dice have"));
 
 while (LastRoll !== sides){
