@@ -32,3 +32,36 @@
 // return b - a;
 // });
 
+let CandidateList = [];
+
+let CandidateNumber = Number(prompt("How many candidates? : "));
+
+for (let i = 0; i < CandidateNumber; i++) {
+
+    let name = prompt(`Candidate name ${i + 1}`);
+    CandidateList.push({name: name, votes: 0});
+}
+
+const Voters = Number(prompt("How many voters? : "));
+
+for (let i = 0; i < Voters; i++) {
+    let vote = prompt("Vote for candidate enter candidate Name: ");
+
+    for (let i = 0; i < CandidateNumber; i++){
+        if(vote == CandidateList[name]){
+        CandidateList[vote - 1].votes++;
+    }
+}
+
+CandidateList.sort((a, b) => b.votes - a.votes);
+
+
+console.log(`The winner is ${CandidateList[0].name} with ${CandidateList[0].votes} votes.`);
+
+console.log('Results:');
+
+for (let i = 0; i < CandidateList.length; i++) {
+    console.log(`${CandidateList[i].name}: ${CandidateList[i].votes} votes.`);
+}
+
+
