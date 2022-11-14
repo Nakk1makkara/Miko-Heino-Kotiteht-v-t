@@ -2,12 +2,12 @@
 // year is a leap year. A year is a leap year if it is divisible by four. However,
 // years divisible by 100 are leap years only if they are also divisible by 400. Print the result on the HTML document. (3p)
 
-let year = parseInt(prompt("Enter a year"));
+let i = parseInt(prompt("Enter a year"));
 
 
 let kohde = document.querySelector('#kohde');
 
-if ((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0)){
+if ((i % 4 == 0 && i % 100 != 0) || (i % 400 == 0)){
     kohde.innerHTML = "the year is a leap year";
 }
 
