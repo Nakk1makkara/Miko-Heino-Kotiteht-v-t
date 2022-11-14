@@ -12,7 +12,7 @@ for(let i = 0; i < nof_p; i++)
     participants[i] = prompt("Name");
 }
 
-let html = '<ol>';
+let html = '<ul>';
 for (let i = 0; i < nof_p; i ++)
 
 {
@@ -22,7 +22,7 @@ for (let i = 0; i < nof_p; i ++)
 
 }
 
-html += '</ol>';
+html += '</ul>';
 
 let kohde = document.querySelector('#kohde');
 kohde.innerHTML = html
