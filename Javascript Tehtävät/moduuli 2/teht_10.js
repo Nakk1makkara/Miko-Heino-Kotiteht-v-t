@@ -47,11 +47,12 @@ const Voters = Number(prompt("How many voters? : "));
 for (let i = 0; i < Voters; i++) {
     let vote = prompt("Vote for candidate enter candidate Name: ");
 
-    for (let i = 0; i < CandidateNumber; i++){
-        if(vote == CandidateList[name]){
-        CandidateList[vote - 1].votes++;
+
+    const candidate = CandidateList.find(candidate => candidate.name === vote);
+    if (candidate) {
+        candidate.votes++;
+        }
     }
-}
 
 CandidateList.sort((a, b) => b.votes - a.votes);
 
@@ -62,10 +63,4 @@ console.log('Results:');
 
 for (let i = 0; i < CandidateList.length; i++) {
     console.log(`${CandidateList[i].name}: ${CandidateList[i].votes} votes.`);
-}
-
-
-
-
-
-
+    }
